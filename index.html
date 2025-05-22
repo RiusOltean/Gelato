@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'arte del Gelato - Oradea</title>
+    <style>
+        :root {
+            --primary-color: #4A3832;
+            --secondary-color: #E8E3E1;
+            --accent-color: #8B6E65;
+            --text-color: #4A3832;
+            --spacing: 2rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            text-align: center;
+        }
+
+        header {
+            background: var(--secondary-color);
+            color: var(--primary-color);
+            text-align: center;
+            padding: calc(var(--spacing) * 2) var(--spacing);
+            margin-bottom: var(--spacing);
+        }
+
+        .logo {
+            max-width: 400px;
+            margin: 0 auto 2rem;
+            padding: 1rem;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-family: 'Segoe UI', cursive;
+            color: var(--primary-color);
+        }
+
+        .slogan {
+            font-size: 1.4rem;
+            font-style: italic;
+            color: var(--accent-color);
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 var(--spacing);
+        }
+
+        section {
+            background: white;
+            border-radius: 20px;
+            padding: var(--spacing);
+            margin-bottom: var(--spacing);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        .features {
+            list-style: none;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .features li {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .features li::before {
+            content: "🍨";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+
+        .contact-info {
+            background-color: var(--secondary-color);
+            padding: var(--spacing);
+            border-radius: 20px;
+            margin-top: var(--spacing);
+            text-align: center;
+        }
+
+        .program {
+            font-weight: bold;
+            margin: 1.5rem 0;
+            font-size: 1.2rem;
+        }
+
+        .social-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .cta {
+            text-align: center;
+            padding: var(--spacing);
+            background: var(--primary-color);
+            color: white;
+            border-radius: 20px;
+            margin: var(--spacing) 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background-color: white;
+            color: var(--primary-color);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --spacing: 1rem;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .logo {
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Logo placeholder - you'll need to provide the actual image -->
+            <img src="logo.png" alt="L'arte del Gelato Logo">
+        </div>
+        <h1>L'arte del Gelato</h1>
+        <div class="slogan">Arta Înghețatei Adevărate</div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Despre Noi</h2>
+            <p>Un nou nume. Aceeași pasiune. Un concept 100% autentic. Descoperă înghețata artizanală naturală, inspirată din rețetele tradiționale italiene și pregătită cu grijă din ingrediente proaspete – fără baze industriale sau arome artificiale. Direct din inima Italiei – învățat la una dintre cele mai renumite academii de gelato.</p>
+        </section>
+
+        <section>
+            <h2>Ce Ne Face Speciali</h2>
+            <ul class="features">
+                <li>100% natural – fără baze gata făcute</li>
+                <li>Fructe adevărate și ingrediente proaspete</li>
+                <li>Rețete italiene autentice</li>
+                <li>Fără paste aromatizante artificiale</li>
+                <li>Gelato artizanal făcut cu pasiune</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Galerie</h2>
+            <div class="image-gallery">
+                <!-- Image placeholders - you'll need to provide the actual images -->
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <h2>Program și Contact</h2>
+            <p class="program">Program: 10:00 - 22:00, 7 zile pe săptămână</p>
+            <p>Adresa: Piața Unirii 2-4, Oradea, România</p>
+            <p>Email: nicerolloradea@gmail.com</p>
+            <div class="social-links">
+                <p><a href="https://www.facebook.com/zsolt.zuchiathi" target="_blank">Urmărește-ne pe Facebook</a></p>
+            </div>
+        </section>
+
+        <div class="cta">
+            <p>🍧 Vino să guști diferența! Te așteptăm cu drag în inima Oradei.</p>
+            <a href="mailto:nicerolloradea@gmail.com" class="button">Contactează-ne</a>
+        </div>
+    </div>
+</body>
+</html> 
